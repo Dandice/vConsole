@@ -17,7 +17,7 @@ const vConsole = new VConsole();
 vConsole.addPlugin(defaultTab);
 vConsole.addPlugin(systemTab);
 vConsole.addPlugin(networkTab);
-
+console.log(200000000000);
 // export
 vConsole.VConsolePlugin = VConsolePlugin;
 export default vConsole;

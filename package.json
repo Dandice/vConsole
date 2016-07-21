@@ -6,7 +6,8 @@
   "main": "dist/vconsole.min.js",
   "scripts": {
     "test": "mocha",
-    "dist": "webpack && npm test"
+    "dist": "webpack && npm test",
+    "start": "node server.js"
   },
   "keywords": [
     "console",
@@ -17,7 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/WechatFE/vConsole.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.14.0",
+    "webpack-dev-middleware": "^1.6.1"
+  },
   "devDependencies": {
     "babel-core": "^6.7.7",
     "babel-loader": "^6.2.4",
@@ -28,13 +32,15 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
     "jsdom": "^9.2.1",
     "json-loader": "^0.5.4",
     "less": "^2.5.3",
     "less-loader": "^2.2.3",
     "mocha": "^2.5.3",
     "style-loader": "^0.13.1",
-    "webpack": "~1.12.11"
+    "webpack": "^1.12.15",
+    "webpack-dev-server": "^1.14.1"
   },
   "author": "WechatFE Team",
   "license": "MIT"
